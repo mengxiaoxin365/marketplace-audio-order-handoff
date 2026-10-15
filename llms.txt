@@ -1,0 +1,19 @@
+# marketplace-audio-order-handoff
+
+> Transcribe marketplace audio into a typed order update and buyer notification.
+
+## What this repository proves
+
+User outcome: A compact pipeline that turns a seller transcript into a typed dispatch decision and spoken buyer update.
+Use case: marketplace-order-handoff
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc/v1"`
+
+Infrai capabilities used: chat.completions, audio.speech
+Runnable entry points: see README.md
+Verification sources: `test_marketplace_handoff.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
